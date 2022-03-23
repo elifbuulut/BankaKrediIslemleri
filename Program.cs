@@ -28,7 +28,7 @@ namespace BankaKrediIslemleri // SOYUTLAMA, POLİMORFIZM, INTERFACES ANLATIM
            ILoggerServices databaseLoggerServices = new DatabaseLoggerServices();
             ILoggerServices fileLoggerServices=new FileLoggerServices();
             BasvuruManager basvuruManager = new BasvuruManager();
-            //basvuruManager.BasvuruYap(ihtiyacKrediManager);  // kullanıcı seçimi olarak düşün!Artık burda ne seçilirse belleğe o gönderiliyor
+
 
             List<IKrediManager> krediler=new List<IKrediManager>
             {
@@ -39,7 +39,7 @@ namespace BankaKrediIslemleri // SOYUTLAMA, POLİMORFIZM, INTERFACES ANLATIM
             Console.ReadLine();
 
             //INTERFACELRİ BİRBİRİNİN ALTERNATİFİ OLAN AMA KOD İÇERİKLERİ FARKLI OLAN DURUMLAR İÇİN KULLANIRIZ. KREDİ TÜRÜNÜN HEPSİNDE 
-            //GERİ ODEME İÇİN HESAPLA () VARDIR HEPSİNDE DE AMA FAİZ ORANI FARKLIDIR. KREDİNİN TÜRÜNE GORE HESAPLAMA İŞLERİ DEĞİŞKENLİK GOSTERİR
+            //GERİ ODEME İÇİN HESAPLA () VARDIR  AMA FAİZ ORANI FARKLIDIR. KREDİNİN TÜRÜNE GORE HESAPLAMA İŞLERİ DEĞİŞKENLİK GOSTERİR
 
 
 
